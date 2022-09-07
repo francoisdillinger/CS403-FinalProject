@@ -1,0 +1,10 @@
+# These are the required packages to run this project
+Flask==2.0.3
+Flask_Login==0.6.2
+Flask_SQLAlchemy==2.5.1
+setuptools==62.6.0
+Werkzeug==2.0.3
+PyMySQL
+Flask-MySQL
+boto3
+mysql-connector-python-rf

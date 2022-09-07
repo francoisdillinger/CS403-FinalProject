@@ -1,0 +1,43 @@
+{% extends "base.html" %}{% block title %}File Upload{% endblock %}
+{% block content %}
+
+<!-- Add file form below here -->
+
+<div class="container">
+    <div class="row vh justify-content-center">
+        <div class="col-md-5">
+            <div class="row justify-content-center mb-6">
+                <h1>File Upload</h1>
+            </div>
+            <form action="" method="post" enctype="multipart/form-data">
+                <div class="mb-6 form-group">
+                    <label for="file" class="form-label">Upload File</label>
+                    <input type="file" class="form-control" name="file" id="file">
+                </div>
+                <div class="mb-6 form-group">
+                    <label for="email1" class="form-label"> Email Adress</label>
+                    <input type="email" class="form-control" name="email1" id="email1" aria-describedby="emailhelp" required>
+                </div>
+                <div class="mb-6 form-group">
+                    <label for="email2" class="form-label"> Email Adress</label>
+                    <input type="email" class="form-control" name="email2" id="email2" aria-describedby="emailhelp">
+                </div>
+                <div class="mb-6 form-group">
+                    <label for="email3" class="form-label"> Email Adress</label>
+                    <input type="email" class="form-control" name="email3" id="email3" aria-describedby="emailhelp">
+                </div>                <div class="mb-6 form-group">
+                    <label for="email4" class="form-label"> Email Adress</label>
+                    <input type="email" class="form-control" name="email4" id="email4" aria-describedby="emailhelp">
+                </div>                <div class="mb-6 form-group">
+                    <label for="email5" class="form-label"> Email Adress</label>
+                    <input type="email" class="form-control" name="email5" id="email5" aria-describedby="emailhelp">
+                </div>
+                <button type="submit" class="btn btn-success w-100">Register</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Add file form above here -->
+
+{% endblock %}
