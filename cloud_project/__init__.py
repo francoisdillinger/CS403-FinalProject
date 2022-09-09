@@ -8,18 +8,18 @@ from flask_login import LoginManager
 
 db = SQLAlchemy()
 mysql = MySQL()
-ADMIN = 'admin'
-PASSWORD = '12345678'
-UPLOAD_FOLDER = '/uploads/'
+ADMIN = ''
+PASSWORD = ''
+UPLOAD_FOLDER = ''
 def create_app():
     app = Flask(__name__)
     app.config['SECRET_KEY'] = 'first_flask_app'
-    app.config['SQLALCHEMY_DATABASE_URI'] = f'mysql+pymysql://{ADMIN}:{PASSWORD}@database-1.chtgj6aaxsxv.us-east-2.rds.amazonaws.com:3306/users?charset=utf8'
+    app.config['SQLALCHEMY_DATABASE_URI'] = f'mysql+pymysql://{ADMIN}:{PASSWORD}@database-url'
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-    app.config['MYSQL_DATABASE_HOST'] = 'database-1.chtgj6aaxsxv.us-east-2.rds.amazonaws.com'
-    app.config['MYSQL_DATABASE_PORT'] = 3306
-    app.config['MYSQL_DATABASE_USER'] = 'admin'
-    app.config['MYSQL_DATABASE_PASSWORD'] = '12345678'
+    app.config['MYSQL_DATABASE_HOST'] = 'database-url'
+    app.config['MYSQL_DATABASE_PORT'] = 00
+    app.config['MYSQL_DATABASE_USER'] = ''
+    app.config['MYSQL_DATABASE_PASSWORD'] = ''
     app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 
