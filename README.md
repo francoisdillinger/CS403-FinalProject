@@ -9,7 +9,7 @@
     5. Lambda
  
 ## Project Details:
-Unfortunately, this project is not live as allocating and running AWS services isn't free and occasionally allocating resources would require generating all new access codes and keys for the majority of services. The other issue is that the project is using SES to send email notifications, but utilizing SES initiaully results in users being placed in a sandbox by Amazon to prevent abuse of the services being used for spamming. As such, the only way out of the sandbox is to apply for a production version which didn't seem worth it for a project.
+Unfortunately, this project is not live as allocating and running AWS services isn't free and occasionally allocating resources would require generating all new access codes and keys for the majority of services. The other issue is that the project is using SES to send email notifications, but utilizing SES initially results in users being placed in a sandbox by Amazon to prevent abuse of the services being used for spamming. As such, the only way out of the sandbox is to apply for a production version which didn't seem worth it for a project.
 
 This project was to have the following functionality:
 
