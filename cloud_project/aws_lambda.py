@@ -6,8 +6,8 @@ import logging
 from botocore.client import Config
 
 # Access key variables
-ACCESS_KEY_ID = 'AKIA6DEPGNEWNKQOTCXT'
-SECRET_ACCESS_KEY = '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'
+ACCESS_KEY_ID = ''
+SECRET_ACCESS_KEY = ''
 REGION_NAME = 'us-east-2'
 
 def send_ses(emails, url):
@@ -22,10 +22,10 @@ def send_ses(emails, url):
             'Subject': {'Data': 'A new file has been uploaded.','Charset': 'UTF-8'},
             'Body': {'Html': {'Data': message,'Charset': 'UTF-8'}}
         },
-        ReplyToAddresses=['elmojester@gmail.com'],
-        Source='elmojester@gmail.com',
-        SourceArn='arn:aws:ses:us-east-2:968815438124:identity/elmojester@gmail.com',
-        ReturnPathArn='arn:aws:ses:us-east-2:968815438124:identity/elmojester@gmail.com',
+        ReplyToAddresses=['@gmail.com'],
+        Source='@gmail.com',
+        SourceArn='',
+        ReturnPathArn='',
     )
 
 
@@ -39,7 +39,7 @@ def create_presigned_url(bucket_name, object_name, expiration=600):
     
 def lambda_handler(event, context):
     # Conneting to DB and getting emails from file upload
-    connection = pymysql.connect(host='database-1.chtgj6aaxsxv.us-east-2.rds.amazonaws.com',user='admin',password='12345678',database='',cursorclass=pymysql.cursors.DictCursor)
+    connection = pymysql.connect(host='database-url',user='',password='',database='',cursorclass=pymysql.cursors.DictCursor)
     cursor = connection.cursor()
     cursor.execute('''SHOW DATABASES''')
     cursor.execute('''use users''')
