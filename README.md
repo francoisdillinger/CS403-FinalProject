@@ -15,7 +15,7 @@ This project was to have the following functionality:
 
     1. Have a registration/login screen.
     2. Once a user is logged in, they are presented with a submission form to submit a file and up to 5 email addresses.
-    3. Once submitted, the file is uloaded to S3, and an SES notification is sent to each email the user entired.
+    3. Once submitted, the file is uloaded to S3, and an SES notification is sent to each email the user entered.
     3. A copy of the file name and logged in user is saved in a database for later billing purposes.
     4. Project must be run in an EC2 instance.
     
